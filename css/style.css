@@ -88,6 +88,16 @@ a{
     color: #ffffff;
 }
 
+.header-cart .header-nav{
+    list-style: none;
+}
+
+.header-nav div{
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
 .header-cart a:nth-of-type(2):hover,
 .header-cart a:nth-of-type(2):hover,
 .header-cart a:nth-of-type(3):focus,
@@ -102,11 +112,24 @@ a{
 
 
 .logo{
+    margin-top: 0px;
     background-color: #ee3643;
+    display:inline-block;
+    width: 220px;
+    height: 47px; 
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
 }
 
-.personal{
+.logo img{
+    position: relative;
+    top: 13px;
+    left: 55px;
+}
+
+.header-personal{
     background-color: #f4f7f9;
+  
 }
 
 .personal h2{
@@ -134,6 +157,13 @@ a{
 
 .login{
     list-style: none;
+}
+
+.account p{
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 
@@ -311,20 +341,20 @@ a{
 }
 
 .orders,
-.account{
+.personal-account{
     font-size: 16px;
     color: #32425c;
 }
 
 .orders:hover,
 .orders:focus,
-.account:hover,
-.account:focus{
+.personal-account:hover,
+.personal-account:focus{
     color: #ee3642;
 }
 
 .orders:active,
-.account:active{
+.personal-account:active{
     color: rgba(50, 66, 92, 0.3);
 }
 
@@ -402,6 +432,10 @@ a{
    line-height: 18px; 
     
    border: 1px solid #e5e5e5;
+}
+
+.sorting{
+    background-color: #f7f3ec;
 }
 
 .pagination-list{
@@ -536,4 +570,268 @@ a{
 
 .modal-letter{
     display: none;
+}
+
+
+/*     */
+
+html,
+body{
+    min-height: 3151px;
+    min-width: 940px;
+}
+
+.main-header{
+  min-height: 320px;
+}
+
+.header-cart{   
+    width: 100%;
+    min-height: 42px;
+    display:flex;
+}
+
+.header-cart .container{
+    width: 940 px;
+    margin: 0 auto;
+    padding: 0;
+    display:flex;
+    
+}
+
+.header-nav{
+    margin-top: 0;
+ 
+  
+}
+
+.header-personal{
+    background-color: #f4f7f9;
+    display: flex;
+    width: 100%;
+    
+}
+
+.header-wrapper{
+    width: 940 px;
+    margin: 0 auto;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.personal{
+    width: 940px;
+    margin: 0 ;
+    padding: 0;
+    height 65px
+    padding-top: 49px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  
+   
+}
+
+.personal h2{
+    padding: 0;
+    margin: 0;
+    width: 208px;
+    height: 60px;
+    
+ 
+}
+
+.personal .phone-address{
+    width: 270px;
+    height: 60px;   
+    margin-left: 71px;    
+}
+
+.account{
+    margin-left:64px;
+}
+
+.main-navigation{
+    width:940px;
+    min-height: 60px;
+    background-color: #32425c;
+    margin-top: 44px;
+    margin-bottom: 60px;
+  
+    
+}
+
+.index-columns{
+    width: 100%;
+    display: flex; 
+    min-height: 536px;
+    padding-top:82px;
+}
+
+.index-columns .container{
+    padding: 0;
+    margin: 0 auto;
+    min-height: 368px;
+    min-width: 940px;
+    display: flex;
+    margin-bottom: 96px; 
+    
+}
+
+.company-info{
+    padding: 0;
+    margin: 0;
+    width: 519px;
+    height: 536px;
+}
+
+.contacts{
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    height: 536px;
+    margin-left:120px;
+}
+
+.company-info-wrapper,
+contacts-wrapper{
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer{
+    min-height: 300px;
+}
+
+.footer-nav{
+    width: 100%
+    height: 193px;   
+}
+
+.footer-nav .container{
+    width: 940px;
+    margin: 0 auto;
+    padding:0;
+    display: flex;
+}
+
+.footer-logo{
+    width: 322px;
+    margin: 0px;
+    margin-right: 68px;
+}
+
+.feedback-section{
+    width: 100%
+    height: 107px;   
+}
+
+.feedback-section .container{
+    width: 940px;
+    margin: 0 auto;
+    padding:0;
+    display: flex;
+}
+
+.footer-copyright{
+    width: 228px;
+    margin: 0px;
+    margin-right: 161px;
+}
+
+.footer-social{
+    width: 162px;
+    margin: 0px;
+    margin-right: 119px;
+}
+
+.feedback{
+    width: 135px;
+    margin: 0px;
+    margin-right: 53px;
+}
+
+.designed{
+    width: 96px;
+    margin: 0px;  
+}
+
+/* catalog */
+
+.breadcrumbs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+
+  /* Временно для сетки */
+  min-height: 24px;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+    
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  /* Временно для сетки */
+  min-height: 89px;
+}
+
+.main-nav{
+   width: 940px;
+    margin: 0 auto;
+    padding:0;
+    display: flex; 
+    flex-direction: column;
+}
+
+.catalog-columns{
+     width: 940px;
+    margin: 0 auto;
+    padding:0;
+    display: flex; 
+}
+
+.filter{
+    width:220px;
+    margin-right: 20px;
+}
+
+.drills{
+   width: 710px; 
+}
+
+.inner-page .popular-list{
+    margin: 0;
+    padding: 0;
+    
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.popular-item{
+    margin: 0;
+    padding: 0;
+    width: 218px;
+    height: 318px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.popular-item:nth-of-type(3n){
+     margin-right: 0px;
+}
+
+.pagination-list{
+    margin-top: 52px;
+    margin-bottom: 60px;
 }
