@@ -58,23 +58,50 @@
   <main class="main-container">
       <section class="main-offers">
          <h2 class="visually-hidden">Основные предложения</h2>
+         <div class="main-offers-wrapper">
          <ul class="widget">
-             <li><img src="img/icon-1.svg"><span class="offer">Материалы </span><a href="#"><button type="button" class="offer-condition"> на любой вкус</button></a></li>
-             <li><img src="img/icon-2.svg"><span class="offer">Инструменты </span><a href="#"><button type="button" class="offer-condition"> на все случаи</button></a></li>
-             <li><img src="img/icon-3.svg"><span class="offer">Техника </span><a href="#"><button type="button" class="offer-condition"> для стройки</button></a></li>
-             <li><img src="img/icon-4.svg"><span class="offer">Скидка 50% </span><a href="#"><button type="button" class="offer-condition"> на 350 товаров</button></a></li>
-             <li><img src="img/icon-5.svg"><span class="offer">Доставка </span><a href="#"><button type="button" class="offer-condition"> бесплатно</button></a></li>
+             <li class="widget-wrapper"><div class="flag flag-new">новинка</div>
+             <img src="img/icon-1.svg"><span class="offer">Материалы </span><a href="#"><button type="button" class="offer-condition"> на любой вкус</button></a></li>
+             <li class="widget-wrapper"><img src="img/icon-2.svg"><span class="offer">Инструменты </span><a href="#"><button type="button" class="offer-condition"> на все случаи</button></a></li>
+             <li class="widget-wrapper"><img src="img/icon-3.svg"><span class="offer">Техника </span><a href="#"><button type="button" class="offer-condition"> для стройки</button></a></li>
+             <li><div class="widget-slider">
+                 <input type="radio" id="btn-1" name="toggle" checked>
+                 <input type="radio" id="btn-2" name="toggle">
+                   <div class="slider-controls">
+                       <label for="btn-1"></label>
+                       <label for="btn-2"></label>
+                   </div>
+                  <div class="slider-inner">
+                      <div class="slider-slides">
+                        <div><img src="img/slide-image-1.jpg" alt=""> <h3>Дрели</h3>
+                              <p>Соседям на радость!</p>
+                              <a class="red-button" href="catalog.html">Открыть каталог</a></div>
+                        <div><img src="img/slide-image.jpg" alt=""><h3>Перфораторы</h3>
+                              <p>Настоящие мужские иргушки</p>
+                              <a class="red-button" href="catalog.html">Открыть каталог</a></div>
+                      </div>
+                  </div>  
+             </div></li>
+             <li>
+             <div class="widget-wrapper"><img src="img/icon-4.svg"><span class="offer">Скидка 50% </span><a href="#"><button type="button" class="offer-condition"> на 350 товаров</button></a></div>
+             <div class="widget-wrapper"><img src="img/icon-5.svg"><span class="offer">Доставка </span><a href="#"><button type="button" class="offer-condition"> бесплатно</button></a></div>
+             </li>
+             
+             
          </ul> 
-         <div>Слайдер</div>
+         
+         </div> 
       </section>
       <section class="popular-goods">
          <div class="popular">
+         <div class="popular-wrapper">
           <h2>Популярные товары:</h2>
           <a class="red-button" href="#">Все популярные товары</a>
+          </div>
          </div>      
          <div class="catalog-items">
            <div class="row">
-            <div class="catalog-item">
+            <div class="catalog-item index-catalog-item">
               
               <div class="actions">
                 <a href="#" class="buy">Купить</a>
@@ -85,7 +112,7 @@
               <div class="discount">32500 Р.</div>
               <div class="price">25500 Р.</div>
             </div>
-            <div class="catalog-item">
+            <div class="catalog-item index-catalog-item">
               <div class="actions">
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
@@ -95,7 +122,7 @@
               <div class="discount">25500 Р.</div>
               <div class="price">15500 Р.</div>
             </div>
-            <div class="catalog-item">
+            <div class="catalog-item index-catalog-item">
              
         <div class="actions">
           <a href="#" class="buy">Купить</a>
@@ -106,7 +133,7 @@
         <div class="discount">30500 Р.</div>
         <div class="price">25500 Р.</div>
       </div>
-      <div class="catalog-item">
+      <div class="catalog-item index-catalog-item">
          <div class="flag flag-new">новинка</div>
         <div class="actions">
           <a href="#" class="buy">Купить</a>
@@ -122,9 +149,12 @@
       </section>
       <section class="popular-produsers">
          <div class="popular">
+         <div class="popular-wrapper">
           <h2>Популярные производители:</h2>
           <a class="red-button" href="#">Все производители</a>
           </div>
+          </div>
+          <div class="producers-wrapper">
           <ul class="producers">
               <li><a class="producer-logo" href="#"><img src="img/Bosch-logo.jpg" alt="Логотип производителя Bosch "></a></li>
               <li><a class="producer-logo" href="#"><img src="img/Makita-logo.jpg" alt="Логотип производителя Makita "></a></li>
@@ -135,12 +165,66 @@
               <li><a class="producer-logo" href="#"><img src="img/AEG-logo.jpg" alt="Логотип производителя AEG "></a></li>
               <li><a class="producer-logo" href="#"><img src="img/Metabo-logo.jpg" alt="Логотип производителя Metabo "></a></li>
           </ul>
+          </div>
       </section>
       <section class="services">
+         <div class="services-wrapper">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-          <!-- Слайдер -->
+                   
+                <div class="services-container">
+                  <form class="slider-form" method="get" action="№">
+                   <fieldset>
+                    <ul>
+                       <li class="slider-option">
+                          <input class=" slider-switch slider-switch-delivery" type="radio"  id="delivery" checked >
+                          <label for="delivery">Доставка</label>
+                        </li>
+                       <li class="slider-option">
+                          <input class=" slider-switch slider-switch-warranty" type="radio" id="warranty" >
+                          <label for="warranty">Гарантия</label>
+                        </li>
+                        <li class="slider-option">
+                          <input class=" slider-switch slider-switch-credit" type="radio" id="credit" >
+                          <label for="credit">Кредит</label>
+                        </li>
+                    </ul>
+                    </fieldset>
+                 </form>
+                 <div  class="slider-section slider-delivery"> 
+                    <div class="container"> <h3>Доставка</h3>
+                    <p>
+                         Мы с удовольствием доставим ваш товар прямо<br>
+                         к вашему подъезду совершенно бесплатно!<br>
+                         Ведь мы неплохо заработаем,<br> 
+                         поднимая его на ваш этаж!
+                    </p>
+                     </div>
+                    <img src="img/delivery.png" alt="Иконка доставки" width="468" height="261"> 
+                 </div>
+                 <div  class="slider-section slider-warranty">
+                    <div class="container"> <h3>Гарантия</h3>
+                    <p>
+                         Если купленный у нас товар поломается или заискрит,<br> 
+                         а также в случае пожара, спровоцированного его возгоранием,<br>  вы всегда                          можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> 
+                         Дом уж восстановите как-нибудь сами.
+                    </p>
+                     </div>
+                    <img src="img/guarantee.png" alt="Иконка гарантии" width="389" height="283"> 
+                </div>
+                <div  class="slider-section slider-credit">
+                    <div class="container"> <h3>Кредит</h3>
+                    <p>
+                        Залезть в долговую яму стало проще!<br> 
+                        Кредитные консультанты придут вам на помощь.
+                    </p>
+                    <a class="red-button" href="#">Отправить заявку</a>
+                    </div>
+                    <img src="img/credit.png" alt="Иконка кредита" width="465" height="285"> 
+                </div>
+                </div>
+          </div>
       </section>
     <div class="index-columns"> 
      <div class="container">   
@@ -231,54 +315,38 @@
        </div>
     </div>
   </footer>
-   <section class="modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <form action="https://echo.htmlacademy.ru" method="post" >
-          <p>
-              <label for="user-login">Логин</label>
-              <input id="user-login" type="email" name="login" placeholder="email@exanple.com">
-          </p>
-            <p>
-              <label for="user-password">Пароль</label>
-              <input id="user-password" type="password" name="password" placeholder="••••••••">
-          </p>
-          <p>
-              <label>
-                  <input type="checkbox" name="remember">
-                  Запомните меня
-              </label>
-              <a href="#">Я забыл пароль</a>
-          </p>
-          <button type="submit">
-              Войти
-          </button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
-    <section class="modal-letter">
+    <section class="modal modal-letter">
+      
+       
         <form action="https://echo.htmlacademy.ru" method="post">
+         <div class="modal-1">
+         <button class="modal-close"  type="button"></button>
           <p class="login-form">
-            <label for="user-name">Ваше имя</label>
+            <label for="user-name">Ваше имя:</label>
             <input id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
           </p>
           <p class="login-form">
-            <label for="user-email">Ваш e-mail</label>
+            <label for="user-email">Ваш e-mail:</label>
             <input id="user-email" type="email" name="email" placeholder="email@example">
           </p>
           <p class="letter">
            Текст письма:
             <label>
-              <textarea rows="10" cols="45" name="text">В свободной форме</textarea>
+              <textarea rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
             </label>
           </p>
+          
+          </div>
+          <div class="modal-2">
           <button type="submit" class="red-button">
             Отправить
           </button>
-          <button type="button">
-          Закрыть
-        </button>
+          </div>
         </form>
+      </section>
+      <section class="modal-map">
+          <button class="modal-close"  type="button"></button>
+          <a href="#"><img src="img/big-map.jpg" width="940" height="446"></a>
       </section>
     
   </body>
