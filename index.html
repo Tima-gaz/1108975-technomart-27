@@ -16,7 +16,9 @@
               <img src="img/logo2.svg" width="109" height="19" alt="Логотип магазина «Техномарт»"></a></li>
              <li><div class="search-button">Поиск:</div></li>
              <li><a class="bookmark-button" href="#">Закладки: 0</a></li>
-             <li><a class="cart-button" href="#">Корзина: 0</a></li>
+             <li><a class="cart-button" href="#">Корзина: 0
+<!--             <input type="button" value="0" id="order-count">-->    
+             </a></li>
              <li><a class="green-button" href="#">Оформить заказ</a></li>
         </ul>
         </div>
@@ -62,8 +64,8 @@
          <ul class="widget">
              <li class="widget-wrapper"><div class="flag flag-new">новинка</div>
              <img src="img/icon-1.svg"><span class="offer">Материалы </span><a href="#"><button type="button" class="offer-condition"> на любой вкус</button></a></li>
-             <li class="widget-wrapper"><img src="img/icon-2.svg"><span class="offer">Инструменты </span><a href="#"><button type="button" class="offer-condition"> на все случаи</button></a></li>
-             <li class="widget-wrapper"><img src="img/icon-3.svg"><span class="offer">Техника </span><a href="#"><button type="button" class="offer-condition"> для стройки</button></a></li>
+             <li class="widget-wrapper"><img src="img/icon-2.svg"><span class="offer">Инструмент </span><a href="#"><button type="button" class="offer-condition"> на все случаи</button></a></li>
+             <li class="widget-wrapper"><img src="img/icon-3.svg"><span class="offer">Техника </span><a href="#"><button type="button" class="offer-condition offer-condition-right"> для стройки</button></a></li>
              <li><div class="widget-slider">
                  <input type="radio" id="btn-1" name="toggle" checked>
                  <input type="radio" id="btn-2" name="toggle">
@@ -83,7 +85,7 @@
                   </div>  
              </div></li>
              <li>
-             <div class="widget-wrapper"><img src="img/icon-4.svg"><span class="offer">Скидка 50% </span><a href="#"><button type="button" class="offer-condition"> на 350 товаров</button></a></div>
+             <div class="widget-wrapper"><img src="img/icon-4.svg"><span class="offer">Скидка 50% </span><a href="#"><button type="button" class="offer-condition offer-condition-right"> на 350 товаров</button></a></div>
              <div class="widget-wrapper"><img src="img/icon-5.svg"><span class="offer">Доставка </span><a href="#"><button type="button" class="offer-condition"> бесплатно</button></a></div>
              </li>
              
@@ -174,24 +176,20 @@
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
                    
                 <div class="services-container">
-                  <form class="slider-form" method="get" action="№">
-                   <fieldset>
                     <ul>
-                       <li class="slider-option">
+                       <li class="slider-option button-delivery">
                           <input class=" slider-switch slider-switch-delivery" type="radio"  id="delivery" checked >
-                          <label for="delivery">Доставка</label>
+                          <label class="label-color" for="delivery">Доставка</label>
                         </li>
-                       <li class="slider-option">
+                       <li class="slider-option button-warranty">
                           <input class=" slider-switch slider-switch-warranty" type="radio" id="warranty" >
                           <label for="warranty">Гарантия</label>
                         </li>
-                        <li class="slider-option">
+                        <li class="slider-option button-credit">
                           <input class=" slider-switch slider-switch-credit" type="radio" id="credit" >
                           <label for="credit">Кредит</label>
                         </li>
                     </ul>
-                    </fieldset>
-                 </form>
                  <div  class="slider-section slider-delivery"> 
                     <div class="container"> <h3>Доставка</h3>
                     <p>
@@ -230,7 +228,7 @@
      <div class="container">   
       <section class="company-info">
         <div class="company-info-wrapper">
-          <h2 class="company">Компания "Техномарт"</h2>
+          <h2 class="company">Компания «Техномарт»</h2>
           <p class="company-article-1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br> строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
           <p class="company-article-2">Мы можем доставить ваш товр в самые отдаленные точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
@@ -247,8 +245,8 @@
          <h2 class="contact">Контакты</h2>
          <p class="contact-article">Вы можете забрать товар сами,<br>
           заехав в наш офис</p>
-         <img src="img/map.jpg" width="340" height="150" alt="Местоположение магазина">
-         <a class="red-button" href="contacts.html">Заблудились? Напишите нам!</a> 
+         <a class="google-map"><img src="img/map.jpg" width="340" height="150" alt="Местоположение магазина"></a>
+         <a class="red-button letter-button" href="#">Заблудились? Напишите нам!</a> 
         </div>
       </section>
       </div>
@@ -275,7 +273,7 @@
           <ul class="footer-nav-2">
             <li><a href="#">Материалы</a></li>   
             <li><a href="#">Техника</a></li>
-            <li><a href="#">Инструменты</a></li>
+            <li><a href="#">Инструмент</a></li>
             <li><a href="#">Спецпредложения</a></li>
          </ul>
          </div>
@@ -284,7 +282,7 @@
     
     <div class="feedback-section">
        <div class="container">
-        <p class="footer-copyright">&copy; 2010-2017 Компания "Техномарт"<br>
+        <p class="footer-copyright">&copy; 2010-2019 Компания "Техномарт"<br>
         Все права защищены</p>
         <ul class="footer-social">
           <li><a class="social-button social-vk" href="#">
@@ -348,6 +346,19 @@
           <button class="modal-close"  type="button"></button>
           <a href="#"><img src="img/big-map.jpg" width="940" height="446"></a>
       </section>
+      <section class="modal modal-order">
+   <div class="modal-order-1">
+       <button class="modal-close"  type="button"></button>
+       <p>Товар добавлен в корзину!</p>
+   </div>   
+    <div class="modal-order-2">
+        <a class="red-button" href="#">Оформить заказ</a>
+        <button class="close" type="button">Продолжить покупки</button>
+    </div>  
+  </section>
     
+    <script src="js/popup.js"></script>
+    <script src="js/added.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
