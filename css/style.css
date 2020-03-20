@@ -179,8 +179,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     color: #ffffff;
     
-    display: block;
-    height: 16px;   
+    display: block;   
 }
 
 .header-nav li:first-child a{
