@@ -5,7 +5,7 @@
     <title>HTML Academy: Техномарт</title>
      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-minimized.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
@@ -62,9 +62,9 @@
          <div class="main-offers-wrapper">
          <ul class="widget">
              <li class="widget-wrapper"><div class="flag flag-new">новинка</div>
-             <img src="img/icon-1.svg"><span class="offer">Материалы </span><a href="#"><button type="button" class="offer-condition"> на любой вкус</button></a></li>
-             <li class="widget-wrapper"><img src="img/icon-2.svg"><span class="offer">Инструмент </span><a href="#"><button type="button" class="offer-condition"> на все случаи</button></a></li>
-             <li class="widget-wrapper"><img src="img/icon-3.svg"><span class="offer">Техника </span><a href="#"><button type="button" class="offer-condition offer-condition-right"> для стройки</button></a></li>
+             <img src="img/icon-1.svg" alt="Иконка материалы"><span class="offer">Материалы </span><a href="#" class="offer-condition"> на любой вкус</a></li>
+             <li class="widget-wrapper"><img src="img/icon-2.svg" alt="Иконка инструменты"><span class="offer">Инструмент </span><a href="#" class="offer-condition"> на все случаи</a></li>
+             <li class="widget-wrapper"><img src="img/icon-3.svg" alt="Иконка техника"><span class="offer">Техника </span><a href="#" class="offer-condition offer-condition-right"> для стройки</a></li>
              <li><div class="widget-slider">
                  <input type="radio" id="btn-1" name="toggle" checked>
                  <input type="radio" id="btn-2" name="toggle">
@@ -84,8 +84,8 @@
                   </div>  
              </div></li>
              <li>
-             <div class="widget-wrapper"><img src="img/icon-4.svg"><span class="offer">Скидка 50% </span><a href="#"><button type="button" class="offer-condition offer-condition-right"> на 350 товаров</button></a></div>
-             <div class="widget-wrapper"><img src="img/icon-5.svg"><span class="offer">Доставка </span><a href="#"><button type="button" class="offer-condition"> бесплатно</button></a></div>
+             <div class="widget-wrapper"><img src="img/icon-4.svg" alt="Иконка скидка"><span class="offer">Скидка 50% </span><a href="#" class="offer-condition offer-condition-right"> на 350 товаров</a></div>
+             <div class="widget-wrapper"><img src="img/icon-5.svg" alt="Иконка доставка"><span class="offer">Доставка </span><a href="#" class="offer-condition"> бесплатно</a></div>
              </li>
              
              
@@ -108,7 +108,7 @@
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="image"><img width="218" height="168" src="img/item4.png"></div>
+              <div class="image"><img width="218" height="168" src="img/item4.png" alt=""></div>
               <div class="title">Перфоратор BOSCH BFG 9000</div>
               <div class="discount">32500 Р.</div>
               <div class="price">25500 Р.</div>
@@ -118,7 +118,7 @@
                 <a href="#" class="buy">Купить</a>
                 <a href="#" class="bookmark">В закладки</a>
               </div>
-              <div class="image"><img width="218" height="168" src="img/item.png"></div>
+              <div class="image"><img width="218" height="168" src="img/item.png" alt=""></div>
               <div class="title">Перфоратор BOSCH BFG 3000</div>
               <div class="discount">25500 Р.</div>
               <div class="price">15500 Р.</div>
@@ -129,7 +129,7 @@
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmark">В закладки</a>
         </div>
-        <div class="image"><img width="218" height="168" src="img/item2.png"></div>
+        <div class="image"><img width="218" height="168" src="img/item2.png" alt=""></div>
         <div class="title">Перфоратор BOSCH BFG 6000</div>
         <div class="discount">30500 Р.</div>
         <div class="price">25500 Р.</div>
@@ -140,7 +140,7 @@
           <a href="#" class="buy">Купить</a>
           <a href="#" class="bookmark">В закладки</a>
         </div>
-        <div class="image"><img width="218" height="168" src="img/item.png"></div>
+        <div class="image"><img width="218" height="168" src="img/item.png" alt=""></div>
         <div class="title">Перфоратор BOSCH BFG 2000</div>
         <div class="discount"></div>
         <div class="price">12500 Р.</div>
@@ -313,7 +313,7 @@
     </div>
   </footer>
     <section class="modal modal-letter">
-      
+      <h2 class="visually-hidden">Ваше письмо</h2>
        
         <form action="https://echo.htmlacademy.ru" method="post">
          <div class="modal-1">
@@ -341,10 +341,6 @@
           </div>
         </form>
       </section>
-      <section class="modal-map">
-          <button class="modal-close"  type="button"></button>
-          <a href="#"><img src="img/big-map.jpg" width="940" height="446"></a>
-      </section>
       <section class="modal modal-order">
    <div class="modal-order-1">
        <button class="modal-close"  type="button"></button>
@@ -356,14 +352,14 @@
     </div>  
   </section>
    <section class="modal modal-map">
-  <h2 class="visually-hidden">Как до нас добраться</h2>
+  <h2 class="visually-hidden">Как до нас добраться?</h2>
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="766" height="560" allowfullscreen></iframe>
   <p><img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
   <button class="modal-close" type="button">Закрыть</button>
 </section>
-    <script src="js/map.js"></script>
-    <script src="js/popup.js"></script>
-    <script src="js/added.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/map-minimized.js"></script>
+    <script src="js/popup-minimized.js"></script>
+    <script src="js/added-minimized.js"></script>
+    <script src="js/slider-minimazed.js"></script>
   </body>
 </html>
