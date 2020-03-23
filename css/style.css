@@ -247,6 +247,10 @@ input[type="radio"].visually-hidden {
     top: 13px;
     left: 55px; 
     vertical-align: middle;
+    width: 109px;
+    height: 19px;
+    \width: 138px;
+    \height: 22px;
    
 }
 
