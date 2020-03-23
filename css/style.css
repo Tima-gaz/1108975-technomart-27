@@ -17,37 +17,37 @@ body{
 }
 
 @font-face { 
-  font-family: 'Cuprum'; 
-  src: url('../fonts/cuprum.woff2') format('woff2'), 
-       url('../fonts/cuprum.woff') format('woff'); 
+  font-family: "Cuprum"; 
+  src: url("../fonts/cuprum.woff2") format("woff2"), 
+       url("../fonts/cuprum.woff") format("woff"); 
   font-weight: normal; 
   font-style: normal; 
 }
 @font-face { 
-  font-family: 'Cuprum Bold'; 
-  src: url('../fonts/cuprumbold.woff2') format('woff2'), 
-       url('../fonts/cuprumbold.woff') format('woff'); 
+  font-family: "Cuprum Bold"; 
+  src: url("../fonts/cuprumbold.woff2") format("woff2"), 
+       url("../fonts/cuprumbold.woff") format("woff"); 
   font-weight: bold; 
   font-style: normal; 
 }
 @font-face { 
-  font-family: 'Cuprum Italic'; 
-  src: url('../fonts/cuprumitalic.woff2') format('woff2'), 
-       url('../fonts/cuprumitalic.woff') format('woff'); 
+  font-family: "Cuprum Italic"; 
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"), 
+       url("../fonts/cuprumitalic.woff") format("woff"); 
   font-weight: normal; 
   font-style: italic; 
 }
 @font-face {
-  font-family: 'PT sans';
-  src: url('../fonts/ptsans.woff2') format('woff2'), 
-       url('../fonts/ptsans.woff') format('woff'); 
+  font-family: "PT sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), 
+       url("../fonts/ptsans.woff") format("woff"); 
   font-weight: normal; 
   font-style: normal; 
 }
 @font-face { 
-  font-family: 'PT sans Bold'; 
-  src: url('../fonts/ptsansbold.woff2') format('woff2'), 
-       url('../fonts/ptsansbold.woff') format('woff'); 
+  font-family: "PT sans Bold"; 
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), 
+       url("../fonts/ptsansbold.woff") format("woff"); 
   font-weight: bold; 
   font-style: normal; 
 }
@@ -242,6 +242,15 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
+.header-nav .logo:active{
+   background-color: #ba2732; 
+}
+
+.header-nav .logo:focus,
+.header-nav .logo:hover{
+   background-color: #ca2c37;  
+}
+
 .header-nav img{
     position: relative;
     top: 13px;
@@ -409,18 +418,16 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 23px;
     color: #ee3643;
-    font-style: italic;
-    
-    
+    font-family: "Cuprum Italic", sans-serif;
     padding: 0;
     margin: 0;
     width: 208px;
     min-height: 60px;
-    
     margin-left: 53px;
     margin-top: 47px;
-    
     flex-shrink: 0;
+    margin-bottom: 1px;
+    font-weight: 400;
 }
 
 
@@ -480,16 +487,20 @@ input[type="radio"].visually-hidden {
 .login{
     list-style: none;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-top: 44px;
     margin-left: 27px;
 }
 
 .login .login-button{
-    padding: 13px 27px 16px 47px;
+        padding: 13px 27px 13px 47px;
     position: relative;
     margin-left: 0px;
     margin-top: 0px;
+    display: block;
+    width: 121px;
+    height: 45px;
+    box-sizing: border-box;
 }
 
 .login .login-button::before{
@@ -694,8 +705,12 @@ input[type="radio"].visually-hidden {
     top: 20px;
     left: 22px;
     
-    font-weight: 700;
+    font-family: "Cuprum Bold",sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+    color: #ffffff;
 }
+
 
 .offer-condition{
     position: absolute;
@@ -775,10 +790,11 @@ div > .widget-wrapper:last-of-type img{
 .slider-slides{
     width: 200%;
     transition: transform 0.8s ease;
+    display: flex;
 }
 
 .slider-slides>div{
-  float: left;
+
   width: 620px;
   height: 266px;
     position: relative;
@@ -829,6 +845,7 @@ div > .widget-wrapper:last-of-type img{
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: middle;
   margin: 4px 6px;
   width: 6px;
   height: 6px;
@@ -883,17 +900,11 @@ div > .widget-wrapper:last-of-type img{
 }
 
 .first-slide {
-    float: left;
   width: 620px;
   height: 266px;
 }
 
-.offer{
-    font-weight:bold;
-    font-size: 24px;
-    line-height: 30px;
-    color: #ffffff;
-}
+
 
 .widget a{
     width: 135px;
@@ -1009,6 +1020,7 @@ div > .widget-wrapper:last-of-type img{
 .catalog-item {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   width: 218px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1122,7 +1134,7 @@ div > .widget-wrapper:last-of-type img{
   margin-bottom: -4px;
   font-size: 18px;
   font-weight: bold;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT sans Bold", sans-serif;
   line-height: 20px;
 }
 
@@ -1136,7 +1148,7 @@ div > .widget-wrapper:last-of-type img{
     
   font-size: 17px;
   font-weight: bold;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT sans Bold", sans-serif;
   line-height: 18px;
 }
 
@@ -1154,7 +1166,7 @@ div > .widget-wrapper:last-of-type img{
     
   font-size: 17px;
   font-weight: bold;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT sans Bold", sans-serif;
   line-height: 18px;
 }
 
@@ -1240,7 +1252,7 @@ div > .widget-wrapper:last-of-type img{
     color: #000000;
     
     margin-bottom: 0;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
 }
 
 .slider-section{
@@ -1258,6 +1270,10 @@ div > .widget-wrapper:last-of-type img{
     margin-top: 70px;
 }
 
+.slider-delivery .container{
+    width: 275px;
+}
+
 .slider-delivery h3,
 .slider-credit h3{
     margin-bottom: 25px;
@@ -1271,9 +1287,17 @@ div > .widget-wrapper:last-of-type img{
     margin-left: -124px;
 }
 
+.slider-warranty .container{
+    width: 374px;
+}
+
 .slider-warranty img{
     margin-top: 4px;
     margin-left: -143px;
+}
+
+.slider-credit .container{
+    width: 278px;
 }
 
 .slider-credit img{
@@ -1282,11 +1306,12 @@ div > .widget-wrapper:last-of-type img{
 }
 
 .slider-credit a{
-      padding: 12px 44px 14px 44px;
+      padding: 11px 44px 14px 44px;
     margin-top: 25px;
     margin-left: 1px;
     
     display: inline-block;
+    vertical-align: middle;
     border-radius: 3px 3px;
     width: 195px;
     height: 38px;
@@ -1330,7 +1355,7 @@ div > .widget-wrapper:last-of-type img{
   position: relative;
 
   display: inline-block;
-
+  vertical-align: middle;
   cursor: pointer;
   user-select: none;
     
@@ -1373,13 +1398,14 @@ div > .widget-wrapper:last-of-type img{
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 .company-article-1,
 .company-article-2,
 .contact-article
 .services p{
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     font-size: 13px;
     line-height: 24px;
     color: #000000;
@@ -1462,6 +1488,7 @@ div > .widget-wrapper:last-of-type img{
 
 .company-info .red-button{
     display: inline-block;
+    vertical-align: middle;
     padding: 10px 40px;
     margin-bottom: 0px;
     
@@ -1485,7 +1512,7 @@ div > .widget-wrapper:last-of-type img{
 }
 
 .contacts p{
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     margin-bottom: 30px;
 }
 
@@ -1508,6 +1535,7 @@ contacts-wrapper{
 
 .contacts-wrapper .red-button{
     display: inline-block;
+    vertical-align: middle;
    padding: 12px 59px 10px 63px;
     position: absolute;
     bottom: 31px;
@@ -1579,7 +1607,7 @@ contacts-wrapper{
 .filter h2{
     background-color: #f7f3ec;
     
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -1607,7 +1635,7 @@ position: relative;
 }
 
 .filter legend {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT sans Bold", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -1683,7 +1711,7 @@ position: relative;
     
     font-size: 17px;
     line-height: 18px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     border:none;
     
     
@@ -1742,7 +1770,7 @@ position: relative;
 
 .filter-input + label{
     text-transform: uppercase;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: normal;
@@ -1822,7 +1850,7 @@ position: relative;
 
 
 .submission{
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT sans", sans-serif;
    font-size: 13px;
    line-height: 18px; 
     text-transform: uppercase;
@@ -1844,7 +1872,7 @@ position: relative;
     margin-left:-20px;
     font-size: 13px;
     line-height: 18px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -1857,21 +1885,19 @@ position: relative;
     
 }
 
-.sorting::before{
-    content: "";
-    background-image: url(../img/icon-up-dir.svg);
-    width: 11px;
-    height: 10px;
+.sorting a{
+    display: block;
+}
+
+.sorting-up{
+    
     top: 14px;
     right: 48px;
     position: absolute;
 }
 
-.sorting::after{
-    content: "";
-    background-image: url(../img/icon-down-dir.svg);
-    width: 11px;
-    height: 10px;
+.sorting-down{
+    
     top: 12px;
     right: 16px;
     position: absolute;
@@ -1903,7 +1929,7 @@ position: relative;
 
 .pagination-item a{
    color: #000000;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT sans", sans-serif;
    font-size: 13px;
    line-height: 18px;
    text-transform: uppercase;
@@ -1959,7 +1985,7 @@ position: relative;
 
 .about-section p{
     color: #555;
-   font-family: "PT Sans", sans-serif;
+   font-family: "PT sans", sans-serif;
    font-size: 13px;
    line-height: 24px;
     margin-bottom: 71px;
@@ -2278,7 +2304,7 @@ position: relative;
 .breadcrumbs a,
 .breadcrumbs-current{
     font-size: 13px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     line-height: 18px;
     color: #000000;
     
@@ -2310,7 +2336,7 @@ position: relative;
 .breadcrumbs li{
     list-style: none;
     position: relative;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     font-size: 13px;
     line-height: 18px;
     color: #000000;
@@ -2320,9 +2346,10 @@ position: relative;
     display: flex;
     flex-direction: column;
     margin-left:auto;
+    position: relative;
 }
 
-.account>a{
+.account>a:first-of-type{
     display: block;
     box-sizing: border-box;
     width: 299px;
@@ -2340,10 +2367,10 @@ position: relative;
     padding-bottom: 11px;
     padding-left: 47px;
     margin-top: 42px;
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
-.account>a::before{
+.account>a:first-of-type::before{
     content: "";
     
     position: absolute;
@@ -2360,20 +2387,14 @@ position: relative;
     opacity: 0.3;
 }
 
-.account>a::after{
-    content: "";
-    
+.account .logout{ 
     position: absolute;
-    top: 13px;
+    top: 57px;
     right: 10px;
     
-    width: 20px;
+    width: 21px;
     height: 17px;
   
-    
-    background-image: url("../img/icon-logout.svg");
-    background-repeat: no-repeat;
-    background-position: 0px 0px;
     opacity: 0.3;
 }
 
@@ -2502,7 +2523,7 @@ position: relative;
 .modal-letter textarea::placeholder{
      font-size: 13px;
     line-height: 18px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT sans", sans-serif;
     color: #a9a9a9;
     
 }
@@ -2528,6 +2549,7 @@ position: relative;
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    color: transparent;
 }
 
 .modal-close::before{
@@ -2544,6 +2566,7 @@ position: relative;
     background-image: url("../img/modal-close.svg");
     background-repeat: no-repeat;
     background-position: 0px 0px;
+    z-index: 12;
 }
 
 .modal-1{
@@ -2564,6 +2587,7 @@ position: relative;
     margin-left: 80px;
     
     display: inline-block;
+    vertical-align: middle;
     border-radius: 3px 3px;
     width: 460px;
     height: 38px;
@@ -2581,7 +2605,7 @@ position: relative;
     top: 24px;
     left: 50%;
     margin-left: -470px;
-    z-index: 100;
+    z-index: 7;
     
     display: none;
 }
@@ -2646,6 +2670,7 @@ position: relative;
     margin-left: 80px;
     
     display: inline-block;
+    vertical-align: middle;
     border-radius: 3px 3px;
     width: 220px;
     box-sizing: border-box;
@@ -2661,6 +2686,7 @@ position: relative;
     margin-left: 20px;
     
     display: inline-block;
+    vertical-align: baseline;
     border: none;
     border-radius: 3px 3px;
     width: 220px;

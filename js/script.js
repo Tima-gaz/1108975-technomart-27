@@ -92,7 +92,7 @@ for(var i=0;i<orderLink.length;i++){
     evt.preventDefault();
     order.classList.add("modal-show");
     amount = amount + 1;   
-  document.getElementById('order-count').innerHTML = amount;
+  document.getElementById("order-count").innerHTML = amount;
     
     if (amount){
       buttonColor.classList.add("cart-button-red");
@@ -153,21 +153,21 @@ var sliderDelivery = document.querySelector(".slider-delivery");
 var sliderWarranty = document.querySelector(".slider-warranty");
 var sliderCredit = document.querySelector(".slider-credit");
 
-if (deliveryInput.hasAttribute('checked')){
+if (deliveryInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderDelivery.classList.remove("display-none");
    
 };
 
-if (warrantyInput.hasAttribute('checked')){
+if (warrantyInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.remove("display-none");
   
 };
 
-if (creditInput.hasAttribute('checked')){
+if (creditInput.hasAttribute("checked")){
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderCredit.classList.remove("display-none");
@@ -177,17 +177,17 @@ if (creditInput.hasAttribute('checked')){
  warrantyInput.addEventListener("click", function (evt) {
     evt.preventDefault();
     
-   warrantyInput.setAttribute('checked', true);
-   creditInput.removeAttribute('checked');
-   deliveryInput.removeAttribute('checked');
-     if (deliveryInput.hasAttribute('checked')){
+   warrantyInput.setAttribute("checked", true);
+   creditInput.removeAttribute("checked");
+   deliveryInput.removeAttribute("checked");
+     if (deliveryInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderDelivery.classList.remove("display-none");
    
 };
 
-if (warrantyInput.hasAttribute('checked')){
+if (warrantyInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.remove("display-none");
@@ -196,7 +196,7 @@ if (warrantyInput.hasAttribute('checked')){
     credit.classList.remove("label-color");
 };
 
-if (creditInput.hasAttribute('checked')){
+if (creditInput.hasAttribute("checked")){
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderCredit.classList.remove("display-none");
@@ -206,10 +206,10 @@ if (creditInput.hasAttribute('checked')){
  deliveryInput.addEventListener("click", function (evt) {
     evt.preventDefault();
     
-   deliveryInput.setAttribute('checked', true);
-   creditInput.removeAttribute('checked');
-   warrantyInput.removeAttribute('checked');
-     if (deliveryInput.hasAttribute('checked')){
+   deliveryInput.setAttribute("checked", true);
+   creditInput.removeAttribute("checked");
+   warrantyInput.removeAttribute("checked");
+     if (deliveryInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderDelivery.classList.remove("display-none");
@@ -218,13 +218,13 @@ if (creditInput.hasAttribute('checked')){
     credit.classList.remove("label-color");
 };
 
-if (warrantyInput.hasAttribute('checked')){
+if (warrantyInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.remove("display-none");
 };
 
-if (creditInput.hasAttribute('checked')){
+if (creditInput.hasAttribute("checked")){
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderCredit.classList.remove("display-none");
@@ -235,23 +235,23 @@ if (creditInput.hasAttribute('checked')){
  creditInput.addEventListener("click", function (evt) {
     evt.preventDefault();
     
-   creditInput.setAttribute('checked', true);
-   deliveryInput.removeAttribute('checked');
-   warrantyInput.removeAttribute('checked');
-     if (deliveryInput.hasAttribute('checked')){
+   creditInput.setAttribute("checked", true);
+   deliveryInput.removeAttribute("checked");
+   warrantyInput.removeAttribute("checked");
+     if (deliveryInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderDelivery.classList.remove("display-none");
            
 };
 
-if (warrantyInput.hasAttribute('checked')){
+if (warrantyInput.hasAttribute("checked")){
     sliderCredit.classList.add("display-none");
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.remove("display-none");
 };
 
-if (creditInput.hasAttribute('checked')){
+if (creditInput.hasAttribute("checked")){
     sliderDelivery.classList.add("display-none");
     sliderWarranty.classList.add("display-none");
     sliderCredit.classList.remove("display-none");
